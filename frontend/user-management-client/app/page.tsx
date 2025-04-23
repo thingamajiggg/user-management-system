@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/react-toastify.css';
+import 'react-toastify/dist/ReactToastify.css';
 import UsersTable from '../components/UsersTable';
 import UserForm from '../components/UserForm';
 import Modal from '../components/Modal';
