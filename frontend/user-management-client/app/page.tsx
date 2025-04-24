@@ -49,6 +49,10 @@ export default function Home() {
   const handleUpdateUser = async (data: UpdateUserDto) => {
     if (!selectedUser) return;
     
+    if (data.password === '') {
+      delete data.password;
+    }
+    
     try {
       await updateUser(selectedUser.id, data);
       toast.success('User updated successfully');
